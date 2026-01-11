@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Broker Associati - Credit card</title>
+
+    <!-- CSS LINK -->
+    <link rel="stylesheet" href="Style/style.css">
+    <!-- GOOGLE FONT LINK -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- animateCSS CDN -->   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Lenis Scroll CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@latest/bundled/lenis.min.js"></script>
+    <!-- GOOGLE ICONS LINK-->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <!--THREEJS CDN SCRIPT -->
+    <script type="importmap">
+        {
+        "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three@0.180.0/build/three.module.js",
+            "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.180.0/examples/jsm/"
+        }
+        }
+    </script>
+    <!-- AOS CDN LINK -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="shortcut icon" href="Assets/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <img src="Assets/carta-mano-trasp.png" alt="" class="img-mano">
+    <nav class="navabr">
+        <a href="https://www.brokerassociati.it/" class="title-font logo-nav animation-right-gs"><img src="Assets/Logos/ba-logo-bianco.png" alt=""></a>
+        <ul class="navbar-list">
+            <a href="https://www.brokerassociati.it/dicono_di_noi.html" class="subtitle-font"><li class="navbar-list-item animation-right-gs">DICONO DI NOI</li></a>
+            <a href="https://www.brokerassociati.it/articoli.html" class="subtitle-font"><li class="navbar-list-item animation-right-gs">ARTICOLI E NEWS</li></a>
+            <a href="https://www.brokerassociati.it/richiesta_contatto.html" class="subtitle-font"><li class="navbar-list-item animation-right-gs">CONTATTI</li></a>
+            <a href="https://www.brokerassociati.it/" class="subtitle-font"><li class="navbar-list-item animation-right-gs">HOME</li></a>
+            
+        </ul>
+        <a href="https://brokerassociati.cardgold.it/" id="a-button" class="nav-button animation-right-gs">
+            <button class="button">
+                <span class="subtitle-font">RICHIEDI ORA</span>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 74 74" height="34" width="34">
+                    <circle stroke-width="3" stroke="black" r="35.5" cy="37" cx="37"></circle>
+                    <path fill="black" d="M25 35.5C24.1716 35.5 23.5 36.1716 23.5 37C23.5 37.8284 24.1716 38.5 25 38.5V35.5ZM49.0607 38.0607C49.6464 37.4749 49.6464 36.5251 49.0607 35.9393L39.5147 26.3934C38.9289 25.8076 37.9792 25.8076 37.3934 26.3934C36.8076 26.9792 36.8076 27.9289 37.3934 28.5147L45.8787 37L37.3934 45.4853C36.8076 46.0711 36.8076 47.0208 37.3934 47.6066C37.9792 48.1924 38.9289 48.1924 39.5147 47.6066L49.0607 38.0607ZM25 38.5L48 38.5V35.5L25 35.5V38.5Z">  
+                    </path>
+                </svg>
+            </button>
+        </a>
+    </nav>
+
+    <header class="header">
+        <div class="cube-effect"></div>
+        <h1 class="title subtitle-font gradient-text animation-top-gs"><span>Mastercard</span><br> <span> Broker Asscoiati</span></h1>
+        <h2 class="poppins-regular subtitle-text-gs">
+            <span class="subtitle-line animation-top-gs sub-line-1">Una carta di credito moderna, affidabile</span> 
+            <span class="subtitle-line animation-top-gs sub-line-1">e flessibile, pensata per gestire al meglio</span> 
+            <span class="subtitle-line animation-top-gs sub-line-1">ogni esigenza quotidiana.</span>
+        </h2>
+        <a href="https://brokerassociati.cardgold.it/" id="a-button" class="button-gs animation-top-gs">
+            <button class="button">
+                <span class="subtitle-font">RICHIEDI ORA</span>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 74 74" height="34" width="34">
+                    <circle stroke-width="3" stroke="black" r="35.5" cy="37" cx="37"></circle>
+                    <path fill="black" d="M25 35.5C24.1716 35.5 23.5 36.1716 23.5 37C23.5 37.8284 24.1716 38.5 25 38.5V35.5ZM49.0607 38.0607C49.6464 37.4749 49.6464 36.5251 49.0607 35.9393L39.5147 26.3934C38.9289 25.8076 37.9792 25.8076 37.3934 26.3934C36.8076 26.9792 36.8076 27.9289 37.3934 28.5147L45.8787 37L37.3934 45.4853C36.8076 46.0711 36.8076 47.0208 37.3934 47.6066C37.9792 48.1924 38.9289 48.1924 39.5147 47.6066L49.0607 38.0607ZM25 38.5L48 38.5V35.5L25 35.5V38.5Z">  
+                    </path>
+                </svg>
+            </button>
+        </a>
+        <div class="mastercard-section animation-left-gs">
+            <img src="Assets/mastercardlogo-removebg.png" alt="mastercard logo">
+            <p class="poppins-regular">Richiedi la tua carta in pochi minuti, senza aprire <br> conti nuovi. Zero costi, zero complicazioni.</p>
+        </div>
+    </header>
+
+    <section class="about">
+            <p class="about-subtitle subtitle-font subtitle" data-aos="fade-in">Scopri tutti i servizi esclusivi pensati per semplificare la tua vita finanziaria.</p>
+            <h2 class="about-title title-font gradient-text" data-aos="fade-in">Scopri cosa rende questa carta <br> unica.</h2>
+            <div class="card-container">
+                <div class="about-card" data-aos="fade-up" data-aos-duration="800">
+                    <h3 class="title-font"> <span class="material-symbols-outlined">savings</span> Zero costi fissi.</h3>
+                    <p class="subtitle-font">La Broker Associati Card Gold elimina le preoccupazioni finanziarie. Non dovrai mai pagare commissioni annuali e potrai utilizzarla senza costi aggiuntivi per acquisti in tutto il mondo..</p>
+                </div>
+                <div class="about-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                    <h3 class="title-font"> <span class="material-symbols-outlined"> rocket_launch</span> Attivazione Smart.</h3>
+                    <p class="subtitle-font">Inizia subito a sfruttare i vantaggi! L'attivazione è rapida e si completa online con pochi passaggi: ricevi un link via email, segui la guida e concludi con la verifica dell'identità direttamente dal tuo smartphone.</p>
+                </div>
+                <div class="about-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+                    <h3 class="title-font"><span class="material-symbols-outlined">calendar_month</span>Flessibilità totale.</h3>
+                    <p class="subtitle-font">Gestisci le tue finanze con la massima libertà. Goditi un'assicurazione di viaggio inclusa e l'opzione di pagamento differito fino a 7 settimane senza interessi, mantenendo la tua banca attuale.</p>
+                </div>
+            </div>
+    </section>
+
+    <canvas id="three-canvas" class="3d-card-conteiner-animation">
+
+    </canvas>
+    
+    <section class="vantages">
+        <p class="subtitle-font subtitle-vantages" data-aos="fade-in" data-aos-duration="1000">di Design.</p>
+        <h2 class="vantages-title title-font gradient-text" data-aos="fade-in" data-aos-duration="1500">Un nuovo standard di libertà.</h2>
+        <p class="subtitle-font p-vantages" data-aos="fade-in" data-aos-duration="1000">Scopri una nuova armonia tra i tuoi desideri e il tuo benessere. Ti offriamo la libertà di concederti ciò che ami, senza rimpianti. Con tecnologia intuitiva e un design che si prende cura di te, trasformiamo le piccole indulgenze quotidiane in un investimento sulla tua felicità. Perché meriti di celebrare ogni giorno ciò che conta davvero.</p>
+    </section>
+
+    <section class="security">
+        <p class="subtitle-font subtitle-security" data-aos="fade-in" data-aos-duration="1000">Sicura.</p>    
+        <h2 class="vantages-title title-font gradient-text" data-aos="fade-in" data-aos-duration="1000">La tua tranquillità è priorità</h2>
+        <p class="subtitle-font p-security" data-aos="fade-in" data-aos-duration="1000">Sperimenta la massima tranquillità grazie a standard di sicurezza d'eccellenza che blindano i tuoi dati sensibili, offrendoti un partner affidabile per ogni tua spesa, online e nei negozi.</p>
+
+        <div class="card-container">
+                <div class="security-card" data-aos="fade-up" data-aos-duration="800">
+                    <h3 class="title-font"> <span class="material-symbols-outlined">security</span> Sicurezza Generale.</h3>
+                    <p class="subtitle-font">Proteggi il tuo shopping: firma la carta, cripta il PIN e monitora ogni transazione. Resta smart, evita sguardi indiscreti e, in caso di furto, blocca tutto istantaneamente con un clic. </p>
+                </div>
+                <div class="security-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                    <h3 class="title-font"> <span class="material-symbols-outlined">travel</span>Mentre Viaggi.</h3>
+                    <p class="subtitle-font">Ottimizza i tuoi viaggi con Card Gold: goditi l'assicurazione gratuita inclusa, prelievi sicuri e gestione smart delle valute. Massima protezione per i tuoi pagamenti esteri, mantenendo il controllo totale ovunque sei.</p>
+                </div>
+                <div class="security-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+                    <h3 class="title-font"><span class="material-symbols-outlined">shopping_bag</span>Acquisti Online.</h3>
+                    <p class="subtitle-font">Fai shopping online in sicurezza con Card Gold: sfrutta la protezione CVV2 e la crittografia SSL. Evita abbonamenti ingannevoli, usa password diverse e tieni traccia di ogni ordine per acquisti garantiti.</p>
+                </div>
+        </div>
+        <div class="card-container">
+                <div class="security-card" data-aos="fade-up" data-aos-duration="800">
+                    <h3 class="title-font"> <span class="material-symbols-outlined">credit_card</span>Garanzia Mastercard.</h3>
+                    <p class="subtitle-font">Eleva la sicurezza dei tuoi acquisti online con Mastercard® SecureCode. Un servizio gratuito e automatico che protegge i tuoi dati senza registrazioni, utilizzando una verifica intelligente basata sul rischio. Shopping sicuro e immediato.</p>
+                </div>
+                <div class="security-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                    <h3 class="title-font"> <span class="material-symbols-outlined">contactless</span>Chip EVM.</h3>
+                    <p class="subtitle-font">Rivoluziona la tua sicurezza con la tecnologia chip EMV: lo standard globale che rende impossibile la clonazione dei dati. Massima protezione contro le frodi grazie all'autenticazione istantanea per transazioni inattaccabili.</p>
+                </div>
+        </div>
+
+    </section>
+
+    <section class="requise">
+        <div class="requise-text-conteiner container">
+            <h2 class="title-font" data-aos="fade-in" data-aos-duration="1500" data-aos-delay="200">Scopri se Mastercard Gold Boker Associati fa per te.</h2>
+            <p class="subtitle-font" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="200">Valuta se possiedi i requisiti per accedere a un mondo di benefici esclusivi, progettati per valorizzare il tuo stile di vita.</p>
+            <a href="https://brokerassociati.cardgold.it/" id="a-button">
+                <button class="button" data-aos="fade-in" data-aos-duration="1000">
+                    <span class="subtitle-font">RICHIEDI ORA</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 74 74" height="34" width="34">
+                        <circle stroke-width="3" stroke="black" r="35.5" cy="37" cx="37"></circle>
+                        <path fill="black" d="M25 35.5C24.1716 35.5 23.5 36.1716 23.5 37C23.5 37.8284 24.1716 38.5 25 38.5V35.5ZM49.0607 38.0607C49.6464 37.4749 49.6464 36.5251 49.0607 35.9393L39.5147 26.3934C38.9289 25.8076 37.9792 25.8076 37.3934 26.3934C36.8076 26.9792 36.8076 27.9289 37.3934 28.5147L45.8787 37L37.3934 45.4853C36.8076 46.0711 36.8076 47.0208 37.3934 47.6066C37.9792 48.1924 38.9289 48.1924 39.5147 47.6066L49.0607 38.0607ZM25 38.5L48 38.5V35.5L25 35.5V38.5Z">  
+                        </path>
+                    </svg>
+                </button>
+            </a>
+        </div>
+        <div class="requise-content-container container">
+            <div class="circle"></div>
+            <div class="requise-subsection">
+                <h3 class="title-font" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">Storia Pulita</h3>
+                <p class="subtitle-font" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">La tua storia creditizia CRIF deve essere impeccabile, senza segnalazioni negative. L'analisi si basa esclusivamente su questo dato, senza consultare altre centrali rischi.</p>
+            </div>
+            <div class="circle"></div>
+            <div class="requise-subsection">
+                <h3 class="title-font" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">Profilo Attivo</h3>
+                <p class="subtitle-font" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">Devi avere un profilo creditizio attivo, come un finanziamento in corso o una carta di credito, già presente nella tua storia CRIF.</p>
+            </div>
+            <div class="circle"></div>
+            <div class="requise-subsection">
+                <h3 class="title-font" data-aos="fade-up" data-aos-duration="800" data-aos-delay="800">Prima Richiesta</h3>
+                <p class="subtitle-font" data-aos="fade-up" data-aos-duration="800" data-aos-delay="800">Non devi aver mai presentato richieste precedenti ad Advanzia Bank (carta YOU) per poter accedere a questa opportunità esclusiva.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="partners">
+        <h3 class="title-font" data-aos="fade-up" data-aos-duration="1000">I nostri Partners.</h3>
+        <p class="subtitle-font" data-aos="fade-up" data-aos-duration="1000">La nostra sicurezza è garantita da partner istituzionali di primo piano, come Advanzia Bank e il circuito globale Mastercard, per offrirti massima affidabilità e protezione.</p>
+        <div class="slider">
+        <div class="slider-track">
+            <img src="Assets/Logos/advanzia-logo.png" alt="Logo Advanzia Bank">
+            <img src="Assets/Logos/affida-logo.png" alt="Logo Affida">
+            <img src="Assets/Logos/mastercard-logo-slider.png" alt="Logo Mastercard">
+            <img src="Assets/Logos/ms-logo-u.png" alt="Logo MS">
+            <img src="Assets/Logos/sede-legale-logo-u.png" alt="Logo Sede Legale">
+            <img src="Assets/Logos/ba-new-logo-use.png" alt="Logo BA">
+
+            <img src="Assets/Logos/advanzia-logo.png" alt="Logo Advanzia Bank">
+            <img src="Assets/Logos/affida-logo.png" alt="Logo Affida">
+            <img src="Assets/Logos/mastercard-logo-slider.png" alt="Logo Mastercard">
+            <img src="Assets/Logos/ms-logo-u.png" alt="Logo MS">
+            <img src="Assets/Logos/sede-legale-logo-u.png" alt="Logo Sede Legale">
+            <img src="Assets/Logos/ba-new-logo-use.png" alt="Logo BA">
+        </div>
+    </div>
+    </section>
+
+    <section class="info">
+        <h2 class="title-font" data-aos="fade-in" data-aos-duration="1000">Come iniziare Subito.</h2>
+        <p class="subtitle-font" data-aos="fade-in" data-aos-duration="1000">In pochi passaggi, trasformi l’idea in azione. Subito, in modo semplice e intuitivo.</p>
+        <img src="Assets/carte-fin.png" alt="creditcard">
+        <h3 class="subtitle-font" id="first" data-aos="fade-up" data-aos-duration="800"> <span class="number">1.</span> <br> Clicca il bottone Richiedi Ora.</h3>
+        <div class="line" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"></div>
+        <h3 class="subtitle-font" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><span class="number">2.</span>  <br> Compila il form senza cambiare connesione di rete.</h3>
+        <div class="line" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"></div>
+        <h3 class="subtitle-font" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><span class="number">3.</span> <br> Attendi qualche giorno, la mail per l'attivazione.</h3>
+        <a href="https://brokerassociati.cardgold.it/" id="a-button">
+                <button class="button">
+                <span class="subtitle-font">RICHIEDI ORA</span>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 74 74" height="34" width="34">
+                    <circle stroke-width="3" stroke="black" r="35.5" cy="37" cx="37"></circle>
+                    <path fill="black" d="M25 35.5C24.1716 35.5 23.5 36.1716 23.5 37C23.5 37.8284 24.1716 38.5 25 38.5V35.5ZM49.0607 38.0607C49.6464 37.4749 49.6464 36.5251 49.0607 35.9393L39.5147 26.3934C38.9289 25.8076 37.9792 25.8076 37.3934 26.3934C36.8076 26.9792 36.8076 27.9289 37.3934 28.5147L45.8787 37L37.3934 45.4853C36.8076 46.0711 36.8076 47.0208 37.3934 47.6066C37.9792 48.1924 38.9289 48.1924 39.5147 47.6066L49.0607 38.0607ZM25 38.5L48 38.5V35.5L25 35.5V38.5Z">  
+                    </path>
+                </svg>
+            </button>
+        </a>
+    </section>
+
+    <section class="contact">
+        <h2 class="title-font gradient-text">Rimaniamo in contatto.</h2>
+        <p class="subtitle-font">Dubbi o curiosità? Siamo qui per chiarirli, in tempi rapidi e con chiarezza.</p>
+        <form action="">
+            <input type="text" name="name" id="name-form" placeholder="Nome" class="subtitle-font">
+            <input type="email" name="email" id="email-form" placeholder="Email" class="subtitle-font">
+            <textarea name="textarea" id="textarea-form" placeholder="Il tuo messaggio..." class="subtitle-font"></textarea>
+            <button class="button">
+                <span class="subtitle-font">INVIA MESSAGGIO</span>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 74 74" height="34" width="34">
+                    <circle stroke-width="3" stroke="black" r="35.5" cy="37" cx="37"></circle>
+                    <path fill="black" d="M25 35.5C24.1716 35.5 23.5 36.1716 23.5 37C23.5 37.8284 24.1716 38.5 25 38.5V35.5ZM49.0607 38.0607C49.6464 37.4749 49.6464 36.5251 49.0607 35.9393L39.5147 26.3934C38.9289 25.8076 37.9792 25.8076 37.3934 26.3934C36.8076 26.9792 36.8076 27.9289 37.3934 28.5147L45.8787 37L37.3934 45.4853C36.8076 46.0711 36.8076 47.0208 37.3934 47.6066C37.9792 48.1924 38.9289 48.1924 39.5147 47.6066L49.0607 38.0607ZM25 38.5L48 38.5V35.5L25 35.5V38.5Z">  
+                    </path>
+                </svg>
+            </button>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="social">
+                <img src="Assets/Logos/ba-new-logo.png" alt="" id="logo-img">
+                <p class="subtitle-font">Siamo un team di professionisti bancari e rating advisor certificati, guidati da valori etici e dalla passione per migliorare la vita di famiglie e imprenditori.</p>
+                <h3 class="subtitle-font">I nostri Social.</h3>
+                <p class="subtitle-font">Scopri come raccontiamo il nostro mondo, ogni giorno.</p>
+                <div class="social-container">
+                    <a href="https://it.linkedin.com/in/lucapacini"><img src="Assets/Icon/linkedin.png" alt=""></a>
+                    <a href="https://www.youtube.com/@LucaPaciniratingadvisor"><img src="Assets/Icon/youtube.png" alt=""></a>
+                    <a href="https://www.instagram.com/lucapaciniadvisor/"><img src="Assets/Icon/instagram.png" alt=""></a>
+                    <a href="https://www.tiktok.com/@lucapacinirating"><img src="Assets/Icon/tiktok.png" alt=""></a>
+                </div>
+            </div>
+            <div class="content">
+                <div class="footer-list" id="first">
+                    <h4 class="title-font">Le nostre sedi.</h4>
+                    <ul class="subtitle-font">
+                        <li>Direzione GENERALE 20121 MILANO <br>Piazzetta Umberto Giordano, 2 <br> <a href="tel:+390287167176">Tel. 02 871 671 76</a></li>
+                        <li>09122 CAGLIARI P.zza l'Unione Sarda, 39 <br><a href="tel:+390287167176">Tel. 02 871 671 76</a></li>
+                        <li>38062 ARCO (TN) Via S. Caterina, 45 <br> <a href="tel:+390287167176">Tel. 02 871 671 76</a></li>
+                        <li>prossima apertura Ufficio ROMA Capitale <br><a href="tel:+0287167176">(già Operativi allo 02 871 671 76)</a></li>
+                    </ul>
+                </div>
+                <div class="footer-list">
+                    <h4 class="title-font">Il nostro gruppo.</h4>
+                    <ul class="subtitle-font">
+                        <li><a href="https://www.brokerassociati.it/">Broker Associati</a></li>
+                        <li><a href="https://www.affida360.it/">Affida360</a></li>
+                        <li><a href="https://www.mutuosicuro.eu/">Mutuo Sicuro</a></li>
+                        <li><a href="https://www.sedelegalemilano.eu/">Sede Legale Milano</a></li>
+                        <li><a href="#">Carta Gold</a></li>
+                        <li><a href="https://www.webratinglab.com/">Web Rating Lab</a></li>
+                    </ul>
+                </div>
+                <div class="footer-list">
+                    <h4 class="title-font">I sevizi che offriamo.</h4>
+                    <ul class="subtitle-font">
+                        <li><a href="https://calendly.com/prenotazione-pacini">Sofferenza bancaria - Risoluzione</a></li>
+                        <li><a href="https://calendly.com/prenotazione-pacini">Credito alle imprese</a></li>
+                        <li><a href="https://www.brokerassociati.it/art/161/scarica_ebook_omaggio_come_chiedere_soldi_e_farseli_dare_luca_pacini_rating_advisor.htm">Il libro sul rating</a></li>
+                        <li><a href="https://calendly.com/prenotazione-pacini">Domiciliazione Legale Imprese e Professionisti</a></li>
+                        <li><a href="https://calendly.com/prenotazione-pacini">Web reputation - rating reputazionale</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="legal-info">
+            <p class="subtitle-font">P. IVA 04100850926 - 11669590967 - ISCR. O.A.M. dott. Cobo Karen, Banca d'Italia collaboratore Matr. M457 <br>Nuova Finanza s.r.l. Piazza San Sepolcro, 1 - 20123 Milano - RATING ITALIA s.r.l. cap. soc. € 500.000 i.v. (Broker Associati & Partners) © Copyright 2007–2025 <br> <a href="#">Privacy Policy</a> </p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="Js/lenis.js"></script>
+    <script type="module" src="Js/three.js"></script>
+    <script src="Js/text-animation.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
