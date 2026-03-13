@@ -1,0 +1,10 @@
+gsap.registerPlugin(SplitType);
+
+
+
+
+
+
+
+
+
