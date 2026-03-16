@@ -345,7 +345,7 @@ canvas{
 /* SECURITY CSS CODE */
 .security{
   width: 100%;
-  height: 110vh;
+  height: fit-content;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -373,6 +373,7 @@ canvas{
     margin-top: 50px;
     display: flex;
     gap: 20px;
+    margin-bottom: 20vh;
 }
 .security .card-container .security-card{
   width: 460px;
