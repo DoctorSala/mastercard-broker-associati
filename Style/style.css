@@ -119,6 +119,29 @@ button:active {
   transform: scale(0.95);
 }
 
+/* Seconda CTA: Variante Dark/Outline */
+button.snd-cta {
+  background: #000000;      
+  color: #ffffff;           
+  border: 2px solid #ba9133; 
+}
+
+button.snd-cta:hover {
+  background: transparent;  
+  color: #ba9133;           
+  border-color: #fec20d;    
+}
+
+
+button.snd-cta svg {
+  fill: #ffffff;            
+  transition: fill 0.2s, transform 0.3s ease-in-out;
+}
+
+button.snd-cta:hover svg {
+  fill: #ba9133;            
+}
+
 /* HEADER CSS CODE */
 header{
     width: 100%;
