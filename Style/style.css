@@ -730,14 +730,14 @@ canvas{
 
 
 /* SECTION INFO CSS */
-.info{
+.info {
   width: 100%;
   height: fit-content;
   display: flex;
   flex-direction: column;
   align-items: center;
   background: radial-gradient(
-    circle at center 35%,
+    circle at 25% 60%, 
     rgba(186, 145, 19, 0.4) 0%,
     rgba(142, 112, 15, 0.18) 15%,
     rgba(122, 95, 0, 0.05) 30%,
@@ -746,6 +746,32 @@ canvas{
   ),
   #f2f2f2;
 }
+.info .info-title-container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.info .info-content-container {
+  width: 100%;
+  display: flex;
+  align-items: stretch; 
+}
+
+.info .info-content-container .info-subc1 {
+  width: 50%;
+}
+
+.info .info-content-container .info-subc2 {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+}
+
+
+
 .info h2{
   font-size: clamp(2.5rem, 3vw, 3.6rem);
   text-align: center;
@@ -753,21 +779,16 @@ canvas{
 }
 .info p{
   color: grey;
-  text-align: center;
-  margin-left: 25%;
-  margin-right: 25%;
-  margin-top: 30px;
 }
-.info img{
-  width: 30%;
+.info img {
+  width: 50%;
+  height: auto; 
+  display: block; 
+  margin: auto;
+  margin-top: 100px;
 }
 .info h3{
   text-align: center;
-}
-.info .line{
-  height: 70px;
-  width: 2px;
-  background-color: grey;
 }
 .info #first{
   margin-top: 5vh;
@@ -781,22 +802,22 @@ canvas{
   font-weight: 500;
 }
 .info a{
-  margin-top: auto; 
+  align-self: flex-start;      
   text-decoration: none;
-  margin-bottom: 15vh;
 }
 .info .info-card-container{
-  margin-top: 100px;
-  width: 90%;
-  display: flex;
-  justify-content: space-around;
-}
-.info .info-card{
-  width: 30%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
+  gap: 50px;
+  margin-top: 100px;
+}
+.info .info-card{
+  width: 100%;
+  display: flex;
+  gap: 20px;
 }
 .info .info-card .circle{
   height: 80px;
@@ -806,20 +827,25 @@ canvas{
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 20px;
 }
 .info .info-card .circle span{
   font-size: 2.5rem;
   font-weight: bold;
 }
+.info .info-card .card-text-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+}
 .info .info-card .sub-card{
-  margin-top: 20px;
-  text-align: center;
-  margin-left: 10%;
+  margin-top: 10px;
   margin-right: 10%;
 }
 .info button{
   margin-top: 100px;
-  margin-bottom: 15vh;
+  justify-self: self-start; 
 }
 
 /* VSL SECTION CSS */
