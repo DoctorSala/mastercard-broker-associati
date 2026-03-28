@@ -255,10 +255,50 @@ header .animation-top-gs, header .animation-left-gs{
   overflow: hidden;
 }
 
+/* VISUAL SECTION CSS CODE */
+.visual {
+  width: 100%;
+  min-height: 40vh; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0;
+}
+
+.visual .visual-subtitle {
+  font-size: 2rem;
+  color: #ba9133;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 15vh; 
+}
+
+.visual .visual-img-conainer {
+  display: flex;
+  flex-wrap: wrap;      
+  justify-content: center; 
+  align-items: center;    
+  gap: 20px;            
+  width: 80%;
+  max-width: 1200px;    
+  margin-top: 20px;
+  margin-bottom: 10vh;
+}
+
+.visual .visual-img-conainer img {
+  height: 50px;         
+  width: auto;          
+  object-fit: contain;  
+  filter: grayscale(100%);
+  transition: all 0.4s ease;
+}
+.visual .visual-img-conainer img:hover {
+  filter: grayscale(0%) brightness(100%) opacity(1);
+  transform: scale(1.05);
+}
 
 /* ABOUT SECTION CSS CODE */
 .about{
-    height: 90vh;
     width: 100%;
     display: flex;
     flex-direction: column; 
@@ -269,7 +309,7 @@ header .animation-top-gs, header .animation-left-gs{
     text-align: center;
 }
 .about .subtitle{
-    margin-top: 20vh;
+    margin-top: 10vh;
     text-align: center;
     color: #c0c0c0;
 }
@@ -643,8 +683,7 @@ canvas{
 
 /* SECTION PARTNERS CSS*/
 .partners{
-  background-color: #f2f2f2;
-  height: 100vh;
+  background-color: #f2f2f2;  
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -653,6 +692,9 @@ canvas{
   font-size: clamp(2.5rem, 3vw, 3.6rem);
   color: #ba9133;
   margin-top: 10vh;
+  text-align: center;
+  margin-left: 25%;
+  margin-right: 25%;
 }
 .partners p{
   margin-left: 25%;
@@ -668,6 +710,7 @@ canvas{
   display: flex;
   box-sizing: border-box; 
   padding: 10px 0; 
+  margin-bottom: 20vh;
 }
 .partners .slider::before,
 .partners .slider::after {
@@ -900,7 +943,6 @@ canvas{
 /* SECTION CONTACT CSS */
 .contact{
   width: 100%;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -949,6 +991,46 @@ canvas{
 .contact form button{
   width: fit-content;
   align-self: center;
+}
+.contact .direct-contact-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+  margin-bottom: 10vh;
+  margin-top: 50px;
+}
+.contact .direct-card-container{
+  display: flex;
+  width: 100%;
+}
+.contact .direct-card-container .direct-card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+.contact .direct-card-container .direct-card .direct-circle{
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  background-color: #ba9133;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+.contact .direct-card-container .direct-card a{
+  text-decoration: none;
+  color: black;
+}
+.contact .direct-card-container .direct-card .direct-circle span{
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.contact .direct-card-container .direct-card .nm-text{
+  color: #fff;
+  font-size: 2rem;
 }
 
 
