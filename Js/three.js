@@ -29,9 +29,7 @@ const rimLight = new THREE.DirectionalLight(0x99ccff, 1.4);
 rimLight.position.set(-1.3, 2.2, 3);
 scene.add(rimLight);
 
-const bounceLight = new THREE.PointLight(0xbfd6ff, 0.45, 4);
-bounceLight.position.set(0, -0.6, 1.2);
-scene.add(bounceLight);
+
 
 const accentLight = new THREE.PointLight(0xffe3b3, 0.4, 3);
 accentLight.position.set(1.5, 0.5, -1);
@@ -81,7 +79,7 @@ function fitCameraToObject(camera, object, offset = 1.25) {
 
 const loader = new GLTFLoader();
 loader.load(
-  "Assets/3DObject/credit_card.glb",
+  "Assets/3DObject/cartafinal.glb",
   (gltf) => {
     const object = gltf.scene;
 
