@@ -10,32 +10,36 @@ const renderer = new THREE.WebGLRenderer({
 });
 renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
 
+renderer.outputColorSpace = THREE.SRGBColorSpace;
+renderer.toneMapping = THREE.ACESFilmicToneMapping;
+renderer.toneMappingExposure = 1.3;
+
 const scene = new THREE.Scene();
 
 const camera = new THREE.PerspectiveCamera(45, 1, 0.1, 100);
 scene.add(camera);
 
-scene.add(new THREE.AmbientLight(0xffffff, 0.2));
+const ambientLight = new THREE.AmbientLight(0xffffff, 0.55);
+scene.add(ambientLight);
 
-const keyLight = new THREE.DirectionalLight(0xffffff, 1.6);
-keyLight.position.set(1.8, 1.5, 2.2);
+const keyLight = new THREE.DirectionalLight(0xffffff, 1.35);
+keyLight.position.set(2.5, 1.8, 3.5);
 scene.add(keyLight);
 
-const fillLight = new THREE.DirectionalLight(0xdfe8ff, 0.65);
-fillLight.position.set(-2, 1.2, -1.5);
+
+const fillLight = new THREE.DirectionalLight(0xe6eefc, 0.75);
+fillLight.position.set(-2.8, 1.2, 2.2);
 scene.add(fillLight);
 
-const rimLight = new THREE.DirectionalLight(0x99ccff, 1.4);
-rimLight.position.set(-1.3, 2.2, 3);
+
+const rimLight = new THREE.DirectionalLight(0xd9e8ff, 0.85);
+rimLight.position.set(-1.5, 2.0, -2.5);
 scene.add(rimLight);
 
 
-
-const accentLight = new THREE.PointLight(0xffe3b3, 0.4, 3);
-accentLight.position.set(1.5, 0.5, -1);
-scene.add(accentLight);
-
-scene.add(new THREE.AmbientLight(0xffffff, 0.15));
+const bottomLight = new THREE.DirectionalLight(0xfff3df, 0.35);
+bottomLight.position.set(0, -2.0, 1.8);
+scene.add(bottomLight);
 
 let modelGroup = null;
 
