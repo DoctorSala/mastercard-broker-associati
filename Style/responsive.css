@@ -1,0 +1,215 @@
+/* 
+media query per cellulari 
+*/
+@media screen and (max-width: 768px) {
+    body{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /* NAV responsive */
+    nav .logo-nav img{
+        height: 24px;
+    }
+    nav .logo-nav{
+        margin-left: 10px;
+    }
+    /* BUTTON / NAV BUTTON CODE */
+    button {
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.2s;
+    padding: 0px 10px;
+    border-radius: 100px;
+    background: #ba9133;
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    font-size: 11px;
+    }
+
+    button:hover {
+    background: #fec20d;
+    }
+
+    button > svg {
+    width: 24px;
+    margin-left: 10px;
+    transition: transform 0.3s ease-in-out;
+    }
+
+    button:hover svg {
+    transform: translateX(5px);
+    }
+
+    button:active {
+    transform: scale(0.95);
+    }
+    nav #a-button{
+        margin-right: 10px;
+    }
+
+    /* header css responsive */
+    header{
+        height: 140vh;
+    }
+    header .cube-effect{
+        width: 50px;
+        height: 50px;
+        border-left: 1px solid #c0c0c0;
+        border-top: 1px solid #c0c0c0;
+    }
+    header h1{
+        margin-top: 15px;
+        font-size: 2.5rem;
+    }
+    .img-mano{
+        height: 450px;
+        right: -25%;
+        object-fit: contain;
+    }
+    header h2{
+        text-align: center;
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+    header a{
+        text-decoration: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    header .mastercard-section{
+        margin-left: 6vw;
+        margin-right: 6vw;
+    }
+    header .mastercard-section p{
+        font-size: .7rem;
+    }
+
+    /* visual css responsive*/
+    .visual{
+        min-height: auto;
+    }
+    .visual .visual-subtitle{
+        margin-top: 3vh;
+    }
+    .visual .visual-img-conainer{
+        width: 95%;
+        gap: 5px;
+        margin-bottom: 5vh;
+    }
+    .visual .visual-img-conainer img {
+        height: 30px;
+    }
+
+    /* about css responsive */
+    .about h2{
+        margin-top: 10px;
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+    .about h2 br{
+        display: none;
+    }
+    .about .card-container{
+        flex-direction: column;
+        width: 90%;
+        gap: 40px;
+        margin-bottom: 10vh;
+    }
+    .about .card-container .about-card{
+        width: 100%;
+        height: auto;
+    }
+    .about .card-container .about-card h3{
+        font-size: 1.4rem;
+    }
+    .about .card-container .about-card h3 span{
+        font-size: 2rem;
+    }
+    .about .card-container .about-card p{
+        margin-bottom: 15px;
+        font-size: .9rem;
+    }
+
+    /* vantages css responsive */
+    .cv-vantages{
+        flex-direction: column-reverse;
+        height: auto;
+    }
+    .cv-vantages canvas{
+        height: 50vh;
+        width: 100%;
+    }
+    .cv-vantages > span{
+        bottom: 2vh;
+        left: 50%;
+    }
+    .cv-vantages .vantages{
+        width: 100%;
+        height: auto;
+        align-items: center;
+    }
+    .cv-vantages .vantages .subtitle-vantages{
+        font-size: 1.2rem;
+        margin-top: 7vh;
+    }
+    .cv-vantages .vantages h2{
+        margin-left: 5vw;
+        margin-right: 5vw;
+        text-align: center;
+        font-size: 2rem;
+        motion-path: 10px;
+    }
+    .cv-vantages .vantages .p-vantages{
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+
+    /* fido css responsive */
+    .fido{
+        flex-direction: column;
+    }
+    .fido .fido-parent{
+        width: 100%;
+        height: auto;
+    }
+    .fido .fido-text-container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .fido .fido-text-container .subtitle-fido{
+        margin-left: 5vw;
+        margin-right: 5vw;
+        text-align: center;
+        font-size: 1.2rem;
+        margin-top: 15vh;
+
+    }
+    .fido .fido-text-container h2{
+        margin-left: 5vw;
+        margin-right: 5vw;
+        text-align: center;
+        font-size: 2rem;
+    }
+    .fido .fido-text-container .p-fido{
+        margin-left: 5vw;
+        margin-right: 5vw;
+        margin-bottom: 10vh;
+    }
+    .credit-score-widget {
+        width: 85%;
+    }
+    .footer-value {
+        font-size: 15px;
+    }
+
+
+
+
+
+
+}

@@ -64,7 +64,6 @@ let currentFollowRotY = 0;
 let currentFollowPosX = 0;
 let currentFollowPosY = 0;
 
-// intensità, più professionali e meno "effetto giocattolo"
 const MAX_ROT_X = 0.18;
 const MAX_ROT_Y = 0.24;
 const MAX_POS_X = 0.12;
@@ -83,7 +82,10 @@ function resize() {
 
 window.addEventListener("resize", () => {
   resize();
-  if (followGroup) fitCameraToObject(camera, followGroup, 1.7);
+  if (followGroup) {
+    const currentOffset = window.innerWidth <= 768 ? 1.36 : 1.7;
+    fitCameraToObject(camera, followGroup, currentOffset);
+  }
 });
 
 resize();
@@ -131,10 +133,14 @@ loader.load(
     modelGroup.rotation.y = BASE_ROT_Y + OFFSET_ROT_Y;
     targetRotationY = modelGroup.rotation.y;
 
-    fitCameraToObject(camera, followGroup, 1.7);
+    const responsiveOffset = window.innerWidth <= 768 ? 1.36 : 1.7;
+
+    fitCameraToObject(camera, followGroup, responsiveOffset);
   },
   undefined,
-  () => {}
+  (error) => {
+    console.error("Errore nel caricamento del modello:", error);
+  }
 );
 
 document.addEventListener("click", (e) => {
@@ -189,11 +195,9 @@ function animate() {
 
   if (followGroup) {
     if (pointerInside) {
-      // la carta segue il cursore con il fronte, non con l'angolo
       targetFollowRotX = -pointerY * MAX_ROT_X;
       targetFollowRotY = pointerX * MAX_ROT_Y;
 
-      // micro parallasse elegante
       targetFollowPosX = pointerX * MAX_POS_X;
       targetFollowPosY = -pointerY * MAX_POS_Y;
     } else {
