@@ -896,7 +896,7 @@ canvas{
 }
 .info button{
   margin-top: 100px;
-  justify-self: self-start; 
+  align-self: flex-start;
 }
 
 /* VSL SECTION CSS */

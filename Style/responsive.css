@@ -251,8 +251,150 @@ media query per cellulari
         margin-bottom: 0;
     }
 
+    /* requise css responsive */
+    .requise{
+        height: auto;
+        flex-direction: column;
+    }
+    .requise .container{
+        width: 100%;
+        height: 50%;    
+    }
+    .requise .requise-text-conteiner h2{
+        margin-left: 5vw;
+        margin-right: 5vw;
+        margin-top: 10vh;
+        font-size: 2rem;
+    }
+    .requise .requise-text-conteiner p{
+        margin-left: 5vw;
+        margin-right: 5vw;
+        margin-top: 15px;
+    }
+    .requise .requise-text-conteiner #a-button{
+        margin-left: 5vw;
+        margin-top: 10vh;
+        margin-bottom: 5vh;
+    }
+    .requise .requise-content-container .circle{
+        margin-left: 5vw;
+    }
+    .requise .requise-content-container .requise-subsection{
+        margin-left: calc(5vw + 20px);
+        height: auto;
+    }
+    .requise .requise-content-container .requise-subsection h3{
+        margin-left: 10px;
+        margin-right: 5vw;
+    }
+    .requise .requise-content-container .requise-subsection p{
+        margin-left: 10px;
+        margin-right: 5vw;
+        margin-bottom: 30px;
+    }
+    
+    /* partenrs css responsive */
+    .partners h3{
+        margin-left: 5vw;
+        margin-right: 5vw;
+        margin-top: 15vh;
+    }
+    .partners p{
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+    .partners .slider{
+        margin-bottom: 10vh;
+        width: 99%;
+    }
+    .partners .slider-track{
+        gap: 25px;
+    }
+    .partners .slider-track img{
+        height: 40px;
+    }
 
-
-
+    /* info responsive css */
+    .info{
+        background: radial-gradient(
+        circle at 50% 85%, 
+        rgba(186, 145, 19, 0.4) 0%,
+        rgba(142, 112, 15, 0.18) 15%,
+        rgba(122, 95, 0, 0.05) 30%,
+        rgba(92, 71, 8, 0.01) 45%,
+        transparent 50%
+    ),
+    #f2f2f2;
+    }
+    .info .info-title-container{
+        justify-content: center; 
+    }
+    .info .info-content-container{
+        width: 100%;
+    }
+    .info .info-title-container h2{
+        margin-top: 15vh;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        text-align: center;
+        font-size: 2rem;
+    }
+    .info .info-title-container p{
+        margin-left: 5vw;
+        margin-right: 5vw;
+        text-align: center;
+        margin-top: 15px;
+    }
+    .info .info-content-container {
+        flex-direction: column-reverse;
+    }
+    .info .info-card-container{
+        width: 99%;
+        justify-content: start;
+    }
+    .info .info-card{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .info .info-content-container .info-subc2{
+        width: 100%;
+        height: auto;
+    }
+    .info .info-content-container .info-subc2 #first{
+        margin-top: 0;
+    }
+    .info .info-content-container h3{
+        margin-left: 5vw;
+        margin-right: 5vw;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .info .info-content-container p{
+        text-align: center;
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+    .info button{
+        margin-top: 50px;
+        justify-self: center!important; 
+        align-self: center!important;
+        margin-left: auto!important;
+        margin-right: auto!important;
+    }
+    .info a{
+        align-self: center;
+    }
+    .info .info-subc1{
+        width: 100%!important;
+        height: auto;
+    }
+    .info img{
+        width: 80%;
+        margin-top: 5vh;
+        margin-bottom: 10vh;
+    }
 
 }
