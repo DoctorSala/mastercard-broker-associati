@@ -10,7 +10,7 @@ media query per cellulari
 
     /* NAV responsive */
     nav .logo-nav img{
-        height: 24px;
+        height: 28px;
     }
     nav .logo-nav{
         margin-left: 10px;
@@ -65,8 +65,8 @@ media query per cellulari
         font-size: 2.5rem;
     }
     .img-mano{
-        height: 450px;
-        right: -25%;
+        height: 70vh;
+        right: -35%;
         object-fit: contain;
     }
     header h2{
@@ -85,6 +85,9 @@ media query per cellulari
     }
     header .mastercard-section p{
         font-size: .7rem;
+    }
+    header .mastercard-section br{
+        display: none;
     }
 
     /* visual css responsive*/
@@ -207,6 +210,46 @@ media query per cellulari
         font-size: 15px;
     }
 
+    /* security css responsive */
+    .security .card-container{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        gap: 40px;
+        margin-bottom: 10vh;
+    }
+    .security .card-container .security-card{
+        width: 100%;
+        height: auto;
+    }
+    .security .card-container .security-card h3{
+        font-size: 1.4rem;
+    }
+    .security .card-container .security-card  span{
+        font-size: 2rem;
+    }
+    .security .card-container .security-card p{
+        margin-bottom: 15px;
+        font-size: .9rem;
+    }
+    .security h2{
+         margin-left: 5vw;
+        margin-right: 5vw;
+        text-align: center;
+        font-size: 2rem;
+    }
+    .security .subtitle-security{
+        margin-left: 5vw;
+        margin-right: 5vw;
+        text-align: center;
+        font-size: 1.2rem;
+        margin-top: 15vh;
+    }
+    .security .p-security{
+        margin-left: 5vw;
+        margin-right: 5vw;
+        margin-bottom: 0;
+    }
 
 
 
