@@ -2,10 +2,16 @@
 media query per cellulari 
 */
 @media screen and (max-width: 768px) {
+    html{
+        overflow-x: hidden;
+    }
     body{
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+    }
+    a{
+        text-decoration: none;
     }
 
     /* NAV responsive */
@@ -124,6 +130,8 @@ media query per cellulari
     .about .card-container .about-card{
         width: 100%;
         height: auto;
+        border: 1.4px solid #d6d6d6;
+
     }
     .about .card-container .about-card h3{
         font-size: 1.4rem;
@@ -221,6 +229,8 @@ media query per cellulari
     .security .card-container .security-card{
         width: 100%;
         height: auto;
+        border: 1.4px solid #d6d6d6;
+
     }
     .security .card-container .security-card h3{
         font-size: 1.4rem;
@@ -396,5 +406,99 @@ media query per cellulari
         margin-top: 5vh;
         margin-bottom: 10vh;
     }
+
+    /*vsl css responsive */
+    .vsl .vsl-sub{
+        margin-left: 5vw;
+        margin-right: 5vw;
+        text-align: center;
+        font-size: 1.2rem;
+        margin-top: 15vh;
+    }
+    .vsl h2{
+        margin-left: 5vw;
+        margin-right: 5vw;
+        text-align: center;
+        font-size: 2rem;
+    }
+    .vsl .vsl-p{
+        margin-left: 5vw;
+        margin-right: 5vw;
+        margin-bottom: 0;
+    }
+    .vsl .video-wrapper{
+        width: 90%;
+    }
+
+    /* contact css responsive */
+    .contact h2{
+        margin-left: 5vw;
+        margin-right: 5vw;
+        text-align: center;
+        font-size: 2rem;
+        margin-top: 5vh;
+    }
+    .contact p{
+        margin-left: 5vw;
+        margin-right: 5vw;
+        margin-bottom: 0;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .contact form{
+        width: 90%;
+        gap: 10px;
+    }
+    .contact form button{
+        margin-top: 20px;
+    }
+    .contact .direct-contact-container{
+        width: 95%;
+    }
+
+    /* footer css responsive */
+    footer{
+        height: auto;
+    }
+    footer .footer-container{
+        flex-direction: column;
+    }
+    footer .footer-container .social{
+        width: 100%;
+    }
+    footer .footer-container .social #logo-img{
+        width: 95%;
+        margin-left: 0;
+    }
+    footer .footer-container .social p{
+        margin-right: 5vw;
+        margin-top: 30px;
+    }
+    footer .footer-container .social h3{
+        margin-top: 10vh;
+    }
+    footer .footer-container .content{
+        width: 100%;
+        flex-direction: column;
+        gap: 0;
+        height: auto;
+    }
+    footer .footer-container .content div{
+        margin-left: 5vw;
+    }
+    footer .footer-container .content #last{
+        margin-bottom: 10vh;
+    }
+    footer .legal-info p{
+        margin-left: 5vw;
+        margin-right: 5vw;
+        font-size: .6rem;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+
+
+
 
 }
