@@ -1,7 +1,7 @@
 /* 
 media query per cellulari 
 */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
     html{
         overflow-x: hidden;
     }
@@ -55,6 +55,10 @@ media query per cellulari
     nav #a-button{
         margin-right: 10px;
     }
+    nav a{
+        text-decoration: none;
+        color: black;
+    }
 
     /* header css responsive */
     header{
@@ -71,9 +75,15 @@ media query per cellulari
         font-size: 2.5rem;
     }
     .img-mano{
-        height: 70vh;
-        right: -35%;
-        object-fit: contain;
+        display: none;
+    }
+    .img-mano-mobile{
+        display: block;
+        width: 90%;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+
     }
     header h2{
         text-align: center;
