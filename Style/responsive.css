@@ -527,7 +527,36 @@ media query per cellulari
         margin-bottom: 20px;
     }
 
+    /* FAQ CSS RESPONSIVE */
+    .ba-faq-section {
+        padding: 90px 20px 100px;
+    }
 
+    .ba-faq-heading {
+        margin-bottom: 45px;
+    }
+
+    .ba-faq-kicker {
+        font-size: 22px;
+    }
+
+    .ba-faq-heading h2 {
+        font-size: clamp(38px, 12vw, 54px);
+    }
+
+    .ba-faq-heading p {
+        font-size: 16px;
+    }
+
+    .ba-faq-item summary {
+        padding: 24px 0;
+        font-size: 18px;
+    }
+
+    .ba-faq-content {
+        padding: 0 35px 26px 0;
+        font-size: 16px;
+    }
 
 
 

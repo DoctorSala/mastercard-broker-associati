@@ -1050,6 +1050,144 @@ canvas{
   font-size: 1.5rem;
 }
 
+/* FAQ SECTION CSS */
+.ba-faq-section {
+  width: 100%;
+  background: #000000;
+  padding: 130px 24px 140px;
+  color: #ffffff;
+}
+
+.ba-faq-container {
+  width: 100%;
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+.ba-faq-heading {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 70px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ba-faq-kicker {
+  display: block;
+  margin-bottom: 10px;
+  color: #c9a227;
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.ba-faq-heading h2 {
+  display: inline-block;
+  width: auto;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: clamp(2.5rem, 3vw, 3.6rem);
+}
+
+.ba-faq-heading p {
+  max-width: 680px;
+  margin: 24px auto 0;
+  color: #bfc0c7;
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.ba-faq-list {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.ba-faq-item {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+  transition: border-color 0.3s ease;
+}
+
+.ba-faq-item:hover {
+  border-color: rgba(201, 162, 39, 0.55);
+}
+
+.ba-faq-item summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 28px 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  color: #f4f4f4;
+  font-size: 21px;
+  line-height: 1.35;
+  font-weight: 500;
+}
+
+.ba-faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.ba-faq-icon {
+  position: relative;
+  flex: 0 0 18px;
+  width: 18px;
+  height: 18px;
+}
+
+.ba-faq-icon::before,
+.ba-faq-icon::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 11px;
+  height: 2px;
+  background: #ffffff;
+  border-radius: 999px;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.ba-faq-icon::before {
+  left: 0;
+  transform: rotate(45deg);
+}
+
+.ba-faq-icon::after {
+  right: 0;
+  transform: rotate(-45deg);
+}
+
+.ba-faq-item[open] .ba-faq-icon::before {
+  background: #c9a227;
+  transform: rotate(-45deg);
+}
+
+.ba-faq-item[open] .ba-faq-icon::after {
+  background: #c9a227;
+  transform: rotate(45deg);
+}
+
+.ba-faq-content {
+  padding: 0 60px 30px 4px;
+  color: #bfc0c7;
+  font-size: 17px;
+  line-height: 1.65;
+}
+
+.ba-faq-content p {
+  margin: 0;
+}
+
+.ba-faq-item[open] summary span:first-child {
+  color: #ffffff;
+}
 
 /* FOTER CSS CODE */
 footer{
